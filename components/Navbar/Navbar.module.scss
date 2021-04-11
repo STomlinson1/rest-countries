@@ -1,0 +1,16 @@
+@use '../../styles/abstracts' as *;
+
+.navbar {
+	height: 7rem;
+
+	.flex {
+		display: flex;
+		height: 100%;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.heading {
+		font-size: $heading-sm;
+	}
+}
