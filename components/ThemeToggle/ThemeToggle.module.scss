@@ -1,0 +1,40 @@
+@use '../../styles/abstracts' as *;
+
+.themeToggle {
+	background: none;
+	outline: none;
+	border: 1px solid white;
+	background-color: #333;
+	width: 8rem;
+	height: 4rem;
+	border-radius: 25px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+
+	img {
+		height: 100%;
+		width: 45%;
+	}
+
+	.toggle {
+		position: absolute;
+		left: 0;
+		z-index: 10;
+		height: 100%;
+		width: 50%;
+		background-color: $white;
+		border-radius: 50%;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.left {
+		transform: translateX(0%);
+	}
+
+	.right {
+		transform: translateX(100%);
+	}
+}
