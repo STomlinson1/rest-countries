@@ -1,0 +1,9 @@
+@use './colors' as *;
+
+$theme-light: (bg: $light-gray, elements: $white, text: $black);
+
+$theme-dark: (bg: $very-dark-blue, elements: $dark-blue, text: $white);
+
+@function getColor($color-name) {
+	@return var(--color-#{$color-name});
+}

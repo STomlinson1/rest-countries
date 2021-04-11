@@ -6,3 +6,20 @@ body {
 	font-family: 'Nunito Sans', sans-serif;
 	overflow-x: hidden;
 }
+
+// Add themeing
+:root {
+	@each $name, $color in $theme-light {
+		--color-#{$name}: #{$color};
+	}
+}
+
+body {
+	background-color: getColor(bg);
+}
+
+body.dark {
+	@each $name, $color in $theme-dark {
+		--color-#{$name}: #{$color};
+	}
+}
