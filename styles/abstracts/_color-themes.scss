@@ -1,9 +1,11 @@
 @use './colors' as *;
 
+// Set light and dark themes
 $theme-light: (bg: $light-gray, elements: $white, text: $black);
-
 $theme-dark: (bg: $very-dark-blue, elements: $dark-blue, text: $white);
 
+// Function to set colors in different stylesheets
+// ex: background-color: getColor(bg);
 @function getColor($color-name) {
 	@return var(--color-#{$color-name});
 }
